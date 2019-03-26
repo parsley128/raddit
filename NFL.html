@@ -1,9 +1,8 @@
 <html>
 
 <head>
-    <title>Raddit</title>
+    <title>NFL</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -13,11 +12,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Raddit</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -28,10 +25,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="home">Link</a>
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -44,23 +41,51 @@
                         <a class="dropdown-item" href="movies.html">Movies</a>
                         <a class="dropdown-item" href="NFL.html">NFL</a>
                     </div>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+        </div>
+    </nav>
 
-                    <div style="margin-left: 50px">
-                        <h1>Raddit</h1>
-                    </div>
-                    <div class="link-class">
-                        <a href="index.html">Home</a>
-                        <a href="food.html">Food</a>
-                        <a href="drink.html">Drink</a>
-                        <a href="movies.html">Movies</a>
-                        <a href="NFL.html">NFL</a>
-                    </div>
-
-                    <br />
-                    <hr />
-                    <h2>Raddit:</h2> A place for backward rabbit.
-                    <br />
-                    <h6>copyright 2019:Front-End Class</h6>
+    <div>
+        <h1>Raddit</h1>
+    </div>
+    <div class="link-class">
+        <a href="index.html">Home</a>
+        <a href="food.html">Food</a>
+        <a href="drink.html">Drink</a>
+        <a href="movies.html">Movies</a>
+        <a href="NFL.html">NFl</a>
+    </div>
+    <br />
+    <br />
+    <h2>Food</h2>
+    A place to talk about food.
+    <br />
+    <div class="blog-post-wrapper">
+        <div class="blog-post">
+            <h3>Nfl Table<i class="nfl"></i></h3>
+            <div class="table=class">
+                <table>
+                    <tr>
+                        <th>city</th>
+                        <th>team name</th>
+                    </tr>
+                    <tr>
+                        <td>Oakland</td>
+                        <td>Raiders</td>
+                    </tr>
+                    <tr>
+                            <td>Kansas City</td>
+                            <td>Chiefs</td>
+                        </tr>
+                </table>
+            </div>
+            <div class="blog-post-author">
+                <span>Chad</span>
+                <span>03/21/2019 7:11pm</span>
+            </div>
+        </div>
+    </div>
 </body>
-
-</html>
