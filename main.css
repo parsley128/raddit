@@ -1,5 +1,6 @@
 body {
         background: #bdc3c7;
+      
       }
       
       .index-body {
@@ -102,4 +103,18 @@ body {
       }
       .form-label {
               margin-bottom: 10px !important;
+      }
+
+      .thumbs-class {
+        margin: 10px;
+        color: gray;
+      }
+
+      .thumbs-class:hover {
+        cursor: grab;
+      }
+
+      .thumbs-liked {
+        color: gold;
+        font: 40px;
       }
