@@ -29,6 +29,13 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $("document").ready(function() {
+        $("#like-button").on("click", function() {
+          $("#like-button").toggleClass("thumbs-liked");
+        });
+      });
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -107,7 +114,7 @@
           including versions of Lorem Ipsum.
         </p>
         <div class="blog-post-author">
-          <span>Ben Walcutt</span>
+          <span>Chad</span>
           <span id="post-one"></span>
         </div>
         <div class="thumbs-class">
@@ -127,8 +134,8 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <div class="thumbs-class">
-          <i class="fas fa-thumbs-up" onclick="likePost(this)"></i>
+        <div id="second-post" class="thumbs-class">
+          <i class="fas fa-thumbs-up"></i>
           <span id="like-timestamp"></span>
         </div>
       </div>

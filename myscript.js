@@ -8,12 +8,8 @@ function likePost(targetTag) {
   var thumb = targetTag;
   if (thumb.classList.contains("thumbs-liked")) {
     thumb.classList.remove("thumbs-liked");
-    document.getElementById("like-timestamp").innerHTML = "";
   } else {
     thumb.classList.add("thumbs-liked");
-    document.getElementById("like-timestamp").innerHTML = new MyMoment(
-      new Date()
-    ).printQueensDate();
   }
 }
 
@@ -27,26 +23,30 @@ function MyMoment(date) {
     date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
   this.AMorPM = date.getHours() > 12 ? " PM" : " AM";
 
-  this.printDate = function() {
+  this.printDate = function () {
     return this.month + "/" + this.day + "/" + this.year;
   };
 
-  this.printTime = function() {
+  this.printTime = function () {
     return this.hour + ":" + this.minute + this.AMorPM;
   };
 
-  this.printDateTime = function() {
+  this.printDateTime = function () {
     return this.printDate() + " " + this.print24HourClock();
   };
 
-  this.printQueensDate = function() {
+  this.printQueensDate = function () {
     return this.day + "/" + this.month + "/" + this.year;
   };
 
-  this.print24HourClock = function() {
+  this.print24HourClock = function () {
     if (this.AMorPM === " PM") {
       this.hour = this.hour + 12;
     }
     return this.hour + ":" + this.minute;
+  };
+
+  this.printSelf = function () {
+    console.log(this);
   };
 }
